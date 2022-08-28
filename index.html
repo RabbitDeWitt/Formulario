@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/imgs/undraw_shopping_re_3wst.svg" alt="">
+        </div>
+        
+        <form action="#">
+            <div class="form-header">
+                <h1>Cadastre-se</h1>
+                <button>Entrar</button>
+            </div>
+
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="txtFirstname">Primeiro nome</label>
+                    <input id="txtFirstname" type="text" placeholder="Digite seu primeiro nome" required>
+                </div>
+                <div class="input-box">
+                    <label for="txtLastname">Sobrenome</label>
+                    <input id="txtLastname" type="text" placeholder="Digite seu sobrenome" required>
+                </div>
+                <div class="input-box">
+                    <label for="txtEmail">E-mail</label>
+                    <input id="txtEmail" type="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="input-box">
+                    <label for="txtCellphone">Celular</label>
+                    <input id="txtCellphone" type="text" placeholder="(xx) xxxxx-xxxx" required>
+                </div>
+                <div class="input-box">
+                    <label for="txtPassword">Senha</label>
+                    <input id="txtPassword" type="password" placeholder="Digite sua senha" minlength="6" required>
+                </div>
+                <div class="input-box">
+                    <label for="txtConfirmPassword">Confirmar senha</label>
+                    <input id="txtConfirmPassword" type="password" placeholder="Digite sua senha novamente" minlength="6" required>
+                </div>
+            </div>
+
+            <div class="gender-section">
+                <h3>Gênero</h3>
+                <div class="gender-group">
+                    <div class="gender-input">
+                        <input id="female" type="radio" name="gender" class="gender" value="Feminino" required>
+                        <label for="female">Feminino</label>
+                    </div>
+                    <div class="gender-input">
+                        <input id="male" type="radio" name="gender" class="gender" value="Masculino">
+                        <label for="male">Masculino</label>
+                    </div>
+                    <div class="gender-input">
+                        <input id="other" type="radio" name="gender" class="gender" value="Outro">
+                        <label for="other">Outro</label>
+                    </div>
+                    <div class="gender-input">
+                        <input id="none" type="radio" name="gender" class="gender" value="Não informado">
+                        <label for="none">Prefiro não dizer</label>
+                    </div>
+                </div>
+            </div>
+            <button id="btnForm" type="submit">Continuar</button>
+        </form>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
