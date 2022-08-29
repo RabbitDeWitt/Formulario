@@ -12,6 +12,7 @@
     --background-image: #fde3a7d7;
     --background-form: #FFF;
     --background-button: #6c63ff;
+    --background-button-disabled: #6d6c8b;
     --button-font-primary: #FFF;
     --button-font-hover: #6c63ff;
     --label-color: 000000c0;
@@ -78,6 +79,13 @@ button{
     font-weight: 500;
     cursor: pointer;
     transition: .3s ease;
+}
+
+button:disabled, button:disabled:hover{
+    background: var(--background-button-disabled);
+    border: 1px solid var(--background-button-disabled);
+    color: var(--button-font-primary);
+    cursor: default;
 }
 
 button:hover{
